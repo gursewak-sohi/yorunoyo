@@ -8,6 +8,7 @@ html * {
 body {
     font-family: 'Noto Sans JP', sans-serif;
     color: #000000;
+    overflow-x: hidden;
 }
 
 :root {
@@ -50,7 +51,8 @@ a:hover {
     margin: 0 25px;
 }
 
-.c-nav-link:hover {
+.c-nav-link:hover,
+.c-nav-link:focus {
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -116,6 +118,7 @@ a:hover {
 .c-btn-toggler span {
     position: relative;
     right: 10px;
+    top: -2px;
 }
 
 .c-btn-toggler>img {
@@ -388,7 +391,7 @@ a:hover {
 }
 
 .about-section {
-    padding-top: 152px;
+    padding-top: 132px;
     padding-bottom: 83px;
     background-color: #000;
     text-align: center;
@@ -483,7 +486,7 @@ a:hover {
 
 .collaboration-section {
     background-color: #fff;
-    padding-bottom: 99px;
+    padding-bottom: 30px;
 }
 
 .night-view-section {
@@ -533,7 +536,6 @@ a:hover {
 
 .map-section {
     padding-top: 65px;
-    padding-bottom: 47px;
     text-align: center;
 }
 
@@ -565,6 +567,7 @@ a:hover {
 }
 
 .outline-section {
+    padding-top: 47px;
     padding-bottom: 77px;
 }
 
@@ -781,10 +784,18 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    right: 46px;
-    top: -10px;
+    position: fixed;
+    right: -46px;
+    bottom: 110px;
     background-color: #000;
+    opacity: 0;
+    transition: right 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.3s, background-color 0.25s ease-in-out;
+    z-index: 1025;
+}
+
+.go-to-top.show {
+    opacity: 1;
+    right: 46px;
 }
 
 .go-to-top img {
@@ -829,6 +840,7 @@ a:hover {
 
 .partnership-section {
     padding-bottom: 40px;
+    padding-top: 70px;
 }
 
 @media (max-width:1620px) {
@@ -974,10 +986,6 @@ a:hover {
         margin-left: 0;
         margin-right: 0;
     }
-    .go-to-top {
-        right: 50%;
-        transform: translateX(50%);
-    }
 }
 
 @media (max-width:767px) {
@@ -1023,9 +1031,9 @@ a:hover {
     .footer-links {
         margin-bottom: 30px;
     }
-    .go-to-top {
+    .go-to-top.show {
+        opacity: 1;
         right: 20px;
-        transform: none;
     }
     .footer-lang {
         position: static;
@@ -1188,7 +1196,7 @@ a:hover {
     }
     .go-to-top {
         transform: scale(0.7);
-        top: -23px;
+        bottom: 20px;
     }
     .experience-section {
         padding-top: 30px;
