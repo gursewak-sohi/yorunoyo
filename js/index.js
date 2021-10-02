@@ -33,7 +33,7 @@
  $(document).ready(function() {
 
      // Play video with Button
-     $("#playButton ").on("click ", () => {
+     $("#playButton").on("click ", () => {
          $("#about-video> a > img").trigger("click");
      });
 
