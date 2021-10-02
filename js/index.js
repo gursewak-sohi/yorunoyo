@@ -4,6 +4,7 @@
      grabCursor: true,
      centeredSlides: true,
      slidesPerView: "auto",
+     speed: 800,
      coverflowEffect: {
          rotate: 50,
          stretch: 0,
@@ -39,6 +40,7 @@
      // Toggle Slide
      $("#slide-two-view").hide();
      swiper.on('slideChange', function() {
+        new WOW().init();
          if ($("#slide-one").hasClass("swiper-slide-active")) {
              $("#slide-one-view").toggle();
              $("#slide-two-view").toggle();

@@ -100,6 +100,22 @@ a:hover {
     position: absolute;
     right: 30px;
     top: 13px;
+    animation: shake .5s linear infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(-3%);
+    }
+    80% {
+        transform: translateX(3%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .c-btn-toggler:hover,
@@ -138,9 +154,29 @@ a:hover {
     margin-top: 37px;
 }
 
+.hero-top-text span {
+    background-image: linear-gradient( 70deg, #fff 30%, /* font color */
+    #FF870F 50%, #fff 30%/* font color */
+    );
+    background-size: 500% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: shine 2.5s infinite;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .hero-main-image {
     text-align: center;
-    margin-top: -7vw;
+    margin-top: -2vw;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -202,6 +238,10 @@ a:hover {
     padding: 16px 7px;
     min-width: 643px;
     margin-bottom: -27vw;
+}
+
+.hero-text-bg1 {
+    margin-bottom: -23vw;
 }
 
 .c-red-icons {
@@ -390,6 +430,27 @@ a:hover {
     margin-top: -7px;
 }
 
+.news-listing-items p a {
+    display: inline-block;
+}
+
+.news-listing-items h6,
+.news-listing-items p,
+.news-listing-items .c-category,
+.news-listing-items p a {
+    transition: 0.2s ease all;
+}
+
+.news-listing-items:hover h6,
+.news-listing-items:hover p,
+.news-listing-items:hover .c-category {
+    opacity: 0.8;
+}
+
+.news-listing-items:hover p a {
+    transform: translateX(8px) scale(1.1);
+}
+
 .about-section {
     padding-top: 132px;
     padding-bottom: 83px;
@@ -505,6 +566,7 @@ a:hover {
 .exp-image {
     margin-bottom: 13px;
     height: 229px;
+    overflow: hidden;
 }
 
 .exp-block-dark .exp-image {
@@ -513,8 +575,12 @@ a:hover {
 
 .exp-block img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
+    transition: 0.3s all ease-in-out;
+}
+
+.exp-block:hover .exp-image img {
+    transform: scale(1.15);
 }
 
 .exp-block h5 {
@@ -542,9 +608,28 @@ a:hover {
 .map-frame {
     height: 457px;
     width: 100%;
-    margin-bottom: 37px;
+    margin-bottom: 28px;
 }
 
+.map-links {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 37px;
+}
+
+.map-links > a {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	color: #000;
+	text-decoration: underline;
+    line-height: 30px;
+    transition: 0.2s all ease;
+}
+.map-links > a:hover {
+    opacity: 0.8;
+}
 .map-block h4 {
     font-size: 24px;
     font-weight: 700;
@@ -555,7 +640,10 @@ a:hover {
 .map-block img {
     margin-bottom: 31px;
 }
-
+.map-links  img {
+    
+    margin-right: 8px;
+}
 .map-block p {
     font-size: 14px;
     line-height: 30px;
@@ -853,16 +941,16 @@ a:hover {
         right: 230px;
     }
     .hero-main-image {
-        margin-top: -5vw;
+        margin-top: -1vw;
     }
     .hero-main-image-2 {
         margin-top: -8vw;
     }
-    .hero-text {
-        margin-bottom: -23vw;
-    }
     .hero-text-bg {
         margin-bottom: -30vw;
+    }
+    .hero-text-bg1 {
+        margin-bottom: -26vw;
     }
 }
 
@@ -887,13 +975,13 @@ a:hover {
         margin-top: -4vw;
     }
     .hero-main-image-2 {
-        margin-top: -7vw;
-    }
-    .hero-text {
-        margin-bottom: -28vw;
+        margin-top: -1vw;
     }
     .hero-text-bg {
         margin-bottom: -30vw;
+    }
+    .hero-text-bg1 {
+        margin-bottom: -28vw;
     }
 }
 
@@ -941,7 +1029,7 @@ a:hover {
         margin-bottom: -300px;
     }
     .hero-main-image {
-        margin-top: -2vw;
+        margin-top: -1vw;
     }
     .hero-main-image>img {
         max-width: 80%;
@@ -1049,7 +1137,7 @@ a:hover {
         width: 100%;
     }
     .hero-main-image>img {
-        max-width: 70%;
+        max-width: 80%;
         width: 290px;
     }
     .hero-text {
@@ -1082,6 +1170,7 @@ a:hover {
     }
     .hero-text-bg {
         padding: 7px 7px;
+        margin-bottom: -270px;
     }
     .c-navbar-brand>img {
         max-width: 90%;
@@ -1109,6 +1198,7 @@ a:hover {
         grid-row-gap: 28px;
         justify-items: center;
         text-align: center;
+        transition: 0.2s all ease;
     }
     .news-listing-items p {
         margin-top: 0px;
