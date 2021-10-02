@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Yorunoyo
+    </title>
+    <style>
+        .page-loading {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            -webkit-transition: all .4s .2s ease-in-out;
+            transition: all .4s .2s ease-in-out;
+            background: rgb(63, 221, 206);
+            background: linear-gradient(180deg, rgb(63, 221, 206) 30%, rgb(0, 7, 57) 100%);
+            visibility: hidden;
+            z-index: 9999;
+            transform: translateY(-100%);
+        }
+
+        .page-loading.active {
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .page-loading-inner {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            -webkit-transition: opacity .2s ease-in-out;
+            transition: opacity .2s ease-in-out;
+            opacity: 0;
+        }
+
+        .page-loading.active>.page-loading-inner {
+            opacity: 1;
+        }
+
+        .page-loading-inner>span {
+            display: block;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: normal;
+            color: #fff;
+        }
+
+        .page-spinner {
+            display: inline-block;
+            width: 2.75rem;
+            height: 2.75rem;
+            margin-bottom: .75rem;
+            vertical-align: text-bottom;
+            border: .15em solid #fff;
+            border-right-color: transparent;
+            border-radius: 50%;
+            -webkit-animation: spinner .75s linear infinite;
+            animation: spinner .75s linear infinite;
+        }
+
+        @-webkit-keyframes spinner {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spinner {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+        (function() {
+            window.onload = function() {
+                var preloader = document.querySelector('.page-loading');
+                preloader.classList.remove('active');
+                setTimeout(function() {
+                    preloader.remove();
+                }, 2000);
+            };
+        })();
+    </script>
+</head>
+
+<body id="top">
+    <div class="page-loading active">
+        <div class="page-loading-inner">
+            <div class="page-spinner"></div>
+            <span>Loading...</span>
+        </div>
+    </div>
+  </head>
+  <body id="top">
+    <nav class="navbar navbar-expand-xl  inner-pages">
+      <div class="container-fluid ">
+        <a class="navbar-brand c-navbar-brand " href="index.html ">
+          <img src="images/svg/logo.svg " alt="logo " />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hero-banner-1" aria-controls="hero-banner-1" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon ">
+            <span>
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse " id="hero-banner-1">
+          <ul class="navbar-nav c-navbar-nav mb-2 mb-lg-0 ">
+            <li class="nav-item ">
+              <a class="nav-link c-nav-link " href="#campaign ">キャンペーン
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link c-nav-link " href="#collaboration ">collaboration
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link c-nav-link " href="#partnership ">PARTNERSHIP
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link c-nav-link " href="#nightview ">ナイトビュールート
+              </a>
+            </li>
+          </ul>
+          <div class="c-red-block-wrapper ">
+            <div class="c-red-block ">
+              新型コロナウイルス感染症 への対応について
+            </div>
+          </div>
+          <a id="prevSlide" class="c-btn-toggler c-btn-toggler-orange " href="javascript:; ">
+            <span>yorunoyo
+            </span>
+            <img src="images/svg/arrow.svg " alt=" ">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="inner-pages-header">
+      <div class="container inner-pages-container">
+        <div class="row">
+          <div class="col-12">
+            <div class="inner-page-heading wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s">
+              <h1>Stamprally
+              </h1>
+              <p>スタンプラリー
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stamprally-page">
+      <div class="container inner-pages-container">
+        <div class="row">
+          <div class="col-12">
+            <div class="stamprally-banner-detail">
+              <div class="stamp-logo wow fadeInLeft " data-wow-duration="1s " data-wow-delay="0.2s">
+                <img src="images/stamp_logo.png"/>
+              </div>
+              <div class="stamp-details wow fadeInRight " data-wow-duration="1s " data-wow-delay="0.2s">
+                <h1>横浜夜歩き
+                </h1>
+                <h2>デジタルスタンプラリー
+                </h2>
+                <h3>開催期間
+                </h3>
+                <div class="date_details">
+                  <h4>2021.11.18～12.2x
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="trip-location">
+      <div class="container inner-pages-container">
+        <div class="row">
+          <div class="col-12">
+            <div class="stamp_collected">
+              <div class="phone-img wow fadeInLeft " data-wow-duration="1s " data-wow-delay="0.2s">
+                <img src="images/iPhoneimg.png"/>
+              </div>
+              <div class="stamp-collected-text wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.6s">
+                <p>横浜全90箇所に渡る横浜中のス
+                  <br>
+                  ポットからお好きなところに行って
+                  <br>
+                  スタンプGET！
+                </p>
+                <h1>
+                  集めたスタンプ数に応じて
+                  <br>
+                  ヨルノヨオリジナルグッズや横浜の名産品を
+                  <br>
+                  <p>抽選で100名様にプレゼント！
+                    <span class="highlighttext">
+                    </span>
+                  </p>
+
+                </h1>
+              </div>
+              <div class="gift-img wow fadeInRight " data-wow-duration="1s " data-wow-delay="0.4s">
+                <img src="images/gift-image.png"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="participate-section wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s">
+              <div class="participate-details">
+                <div class="qr_mian_detail">
+                  <div class="qr-code">
+                    <img src="images/about_qr.png"/>
+                  </div>
+                  <div class="qr_text">
+                    <p>こちらのQRコードを
+                      <br>
+                      スマートフォンの標準カメラで
+                      <br>
+                      読み取ってください。
+                    </p>
+                  </div>
+                </div>
+                <div class="participate-btn">
+                  <p>\ &nbsp スマートフォンの場合はこちらをクリック &nbsp /
+                  </p>
+                  <button>スタンプラリーに参加する
+                  </button>
+                </div>
+                <div class="tip_section">
+                  <span>参加はこちらから
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="how_participate">
+      <div class="container participate-container">
+        <div class="row ">
+          <div class="parti_heading">
+            <h1 class="wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s">参加方法
+            </h1>
+            <p class="wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.4s">連携店舗では店頭の「QRコード」を読み取り、連携店舗以外の
+              <br>
+              スポットは「GPS」を利用して獲得できます。
+            </br>
+          スタンプを5個以上集めると、抽選に応募できます。
+          </p>
+      </div>
+      </div>
+    <div class="row bs-gutter-x">
+      <div class="col-md-4">
+        <div class="parti_qr_code wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s">
+          <div class="qr-main">
+            <span>
+              <img class="qr-d" src="images/about_qr.png"/>
+            </span>
+            <div class="steps">
+              <p>step
+              </p>
+              <h1>01
+              </h1>
+            </div>
+          </div>
+          <div class="part-des">
+            <h1>Fun Fan NagaokaスタンプラリーのQRコードをスキャン
+            </h1>
+            <p>※アプリのインストール不要で、誰でもスマートフォンで参加できます。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="parti_qr_code wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.4s">
+          <div class="qr-main">
+            <span class="ph-img">
+              <img src="images/step2-phone.png"/>
+            </span>
+            <div class="steps">
+              <p>step
+              </p>
+              <h1>02
+              </h1>
+            </div>
+          </div>
+          <div class="part-des">
+            <h1>デジタルスタンプラリーにエントリーしよう！
+            </h1>
+            <p>※年代・性別・居住地を選択・利用規約に　同意のうえ「はじめる」でスタート！
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="parti_qr_code wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.6s">
+          <div class="qr-main">
+            <span class="ph-img">
+              <img src="images/step3-phone.png"/>
+            </span>
+            <div class="steps">
+              <p>step
+              </p>
+              <h1>03
+              </h1>
+            </div>
+          </div>
+          <div class="part-des ">
+            <h1>マップを参考に目的のスポットへ移動
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="next_steps_Sec">
+        <div class="next-step_1 wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s">
+          <h1>店舗の場合
+          </h1>
+          <div class="parti_qr_code">
+            <div class="qr-main">
+              <span class="main-qr">
+                <img src="images/howto_step.png">
+              </span>
+              <div class="steps">
+                <p>スポット
+                </p>
+                <h1>01
+                </h1>
+              </div>
+            </div>
+            <div class="part-des">
+              <h1>対象店舗に到着後、 スポットぺ一ジを開き、
+                店頭に設置されたQRコ一 ドを撮影
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="next-step_2 wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.4s">
+          <h1>店舗以外のスポット
+          </h1>
+          <div class="parti_qr_code">
+            <div class="qr-main">
+              <span class="main-qr">
+                <img src="images/howto_step.png">
+              </span>
+              <div class="steps">
+                <p>スポット
+                </p>
+                <h1>02
+                </h1>
+              </div>
+            </div>
+            <div class="part-des">
+              <h1>対象スポットに到着後、 スポットぺ一ジを開き、「スタ ンプを押す」 をタップ
+                <span>※GPSがオンになっているかどぅかご確認くださぃ
+                </span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="last-section-prt wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.6s">
+        <div class="parti_qr_code">
+          <div class="qr-main">
+            <span class="main-qr">
+              <img src="images/howto_step06_img.png">
+            </span>
+            <div class="steps">
+              <p>Step
+              </p>
+              <h1>05
+              </h1>
+            </div>
+          </div>
+          <div class="part-des">
+            <h1>スタンプをGET！
+              <br>
+              次のポイントへ行こう！
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+<section class="map_con_sec">
+  <div class="container inner-pages-container">
+    <div class="row ">
+      <div class="col-12">
+        <div class="gmap wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.4s">
+          <div class="map-frame">
+            <iframe src="https://platinumaps.jp/d/yorunoyo" frameborder="0" height="100%" width="100%">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="give_away wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s">
+          <h1>スタンプラリー景品
+          </h1>
+          <h2>獲得したスタンプの数に応じて、抽選で賞品をプレゼント!
+          </h2>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="participate-section participate-btm wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.4s">
+          <div class="participate-details">
+            <div class="qr_mian_detail">
+              <div class="qr-code">
+                <img  src="images/about_qr.png">
+              </div>
+              <div class="qr_text">
+                <p>こちらのQRコードを
+                  <br>
+                  スマートフォンの標準カメラで
+                  <br>
+                  読み取ってください。
+                </p>
+              </div>
+            </div>
+            <div class="participate-btn">
+              <p>\ &nbsp; スマートフォンの場合はこちらをクリック &nbsp; /
+              </p>
+              <button>スタンプラリーに参加する
+              </button>
+            </div>
+            <div class="tip_section">
+              <span>参加はこちらから
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="read-before wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.6 s">
+          <p>※参加する前に必ずお読みください
+            <br>
+            QRコードを読み取る際の注意事項
+            <br>
+            ご使用中の機種により、以下の通り操作をします。
+            <br>
+            ●iPhoneをご使用の方は標準カメラ機能を使用し、読み取ってください。
+            <br>
+            ※外部QRコード読取アプリや、ウィジェットを使用すると、スタンプが保持されません。
+            <br>
+            ●Androidをご使用の方はお使いのQRコードアプリを使用し、読み取ってください。
+            <br>
+            スタンプラリー参加中の注意事項
+            <br>
+            本スタンプラリーはWebブラウザを使用したスタンプラリーですので、参加中は以下の操作にご注意ください。
+            <br>
+            キャッシュの消去、Cookieの削除、プライベートブラウズモードで使用すると獲得したスタンプが消えてしまいます。
+            <br>
+            必ず同一のブラウザ（iPhoneの方はSafari、Androidの方はChrome）を使用してください。
+            <br>
+            途中でブラウザを変更すると、獲得したスタンプを継承することができません。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer -->
+<footer class="footer-section ">
+  <div class="container c-container-xs ">
+    <div class="footer-block ">
+      <div class="footer-links ">
+        <a class="footer-logo " href="index.html ">
+          <img src="images/svg/logo.svg " alt="logo " width="112 ">
+        </a>
+        <a target="_blank " href="https://twitter.com/yorunoyo2020 ">
+          <img src="images/svg/twitter.svg " alt="Twitter ">
+        </a>
+        <a target="_blank " href="https://www.instagram.com/yorunoyo2020/?hl=ja ">
+          <img src="images/svg/insta.svg " alt="Instagram ">
+        </a>
+      </div>
+      <div class="footer-text ">
+        当サイトはCookieとGoogle Analyticsを利用しています。Google Analyticsでの情報収集の仕組みについてはこちらをご参照ください。
+      </div>
+    </div>
+    <div class="footer-lang ">
+      <span>日本語
+      </span>
+      <img src="images/welltool-logo.png " alt="logo ">
+    </div>
+    <div class="copyright ">
+      ©クリエイティブ・ライト・ヨコハマ実行委員会
+    </div>
+    <a class="go-to-top " href="#top">
+      <img src="images/svg/up.svg " alt="up ">
+    </a>
+  </div>
+</footer>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous ">
+</script>
+<!-- Wow JS -->
+<script type="text/javascript " src="js/wow.min.js">
+</script>
+<!-- Main JS -->
+<script type="text/javascript " src="js/main.js">
+</script>
+</body>
+</html>

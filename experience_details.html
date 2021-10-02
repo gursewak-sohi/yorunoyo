@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Lighbox CSS -->
+    <link href="css/lightgallery-bundle.min.css" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Yorunoyo</title>
+    <style>
+        .page-loading {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            -webkit-transition: all .4s .2s ease-in-out;
+            transition: all .4s .2s ease-in-out;
+            background: rgb(63, 221, 206);
+            background: linear-gradient(180deg, rgb(63, 221, 206) 30%, rgb(0, 7, 57) 100%);
+            visibility: hidden;
+            z-index: 9999;
+            transform: translateY(-100%);
+        }
+
+        .page-loading.active {
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .page-loading-inner {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            -webkit-transition: opacity .2s ease-in-out;
+            transition: opacity .2s ease-in-out;
+            opacity: 0;
+        }
+
+        .page-loading.active>.page-loading-inner {
+            opacity: 1;
+        }
+
+        .page-loading-inner>span {
+            display: block;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: normal;
+            color: #fff;
+        }
+
+        .page-spinner {
+            display: inline-block;
+            width: 2.75rem;
+            height: 2.75rem;
+            margin-bottom: .75rem;
+            vertical-align: text-bottom;
+            border: .15em solid #fff;
+            border-right-color: transparent;
+            border-radius: 50%;
+            -webkit-animation: spinner .75s linear infinite;
+            animation: spinner .75s linear infinite;
+        }
+
+        @-webkit-keyframes spinner {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spinner {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+        (function() {
+            window.onload = function() {
+                var preloader = document.querySelector('.page-loading');
+                preloader.classList.remove('active');
+                setTimeout(function() {
+                    preloader.remove();
+                }, 2000);
+            };
+        })();
+    </script>
+</head>
+
+<body id="top">
+    <div class="page-loading active">
+        <div class="page-loading-inner">
+            <div class="page-spinner"></div>
+            <span>Loading...</span>
+        </div>
+    </div>
+</head>
+
+<body id="top">
+
+  <nav class="navbar navbar-expand-xl  inner-pages">
+      <div class="container-fluid ">
+          <a class="navbar-brand c-navbar-brand " href="index.html ">
+              <img src="images/svg/logo.svg " alt="logo " />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hero-banner-1" aria-controls="hero-banner-1" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon ">
+              <span></span>
+              <span></span>
+              <span></span>
+          </span>
+        </button>
+          <div class="collapse navbar-collapse " id="hero-banner-1">
+              <ul class="navbar-nav c-navbar-nav mb-2 mb-lg-0 ">
+                  <li class="nav-item ">
+                      <a class="nav-link c-nav-link " href="#campaign ">キャンペーン</a>
+                  </li>
+                  <li class="nav-item ">
+                      <a class="nav-link c-nav-link " href="#collaboration ">collaboration</a>
+                  </li>
+                  <li class="nav-item ">
+                      <a class="nav-link c-nav-link " href="#partnership ">PARTNERSHIP</a>
+                  </li>
+                  <li class="nav-item ">
+                      <a class="nav-link c-nav-link " href="#nightview ">ナイトビュールート</a>
+                  </li>
+
+              </ul>
+              <div class="c-red-block-wrapper ">
+                <div class="c-red-icons ">
+                    <a target="_blank " href="https://twitter.com/yorunoyo2020 ">
+                        <img src="images/svg/twitter.svg " alt="Twitter ">
+                    </a>
+                    <a target="_blank " href="https://www.instagram.com/yorunoyo2020/?hl=ja ">
+                        <img src="images/svg/insta.svg " alt="Instagram ">
+                    </a>
+                </div>
+                  <div class="c-red-block ">
+                      新型コロナウイルス感染症 への対応について
+                  </div>
+              </div>
+              <a id="prevSlide" class="c-btn-toggler c-btn-toggler-orange " href="javascript:; "> <span>yorunoyo</span> <img src="images/svg/arrow.svg " alt=" "></a>
+          </div>
+      </div>
+  </nav>
+
+  <section class="inner-pages-header dark">
+    <div class="container dark-pages-container ">
+      <div class="row">
+        <div class="col-12">
+          <div class="inner-page-heading experience-h wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s ">
+            <h1>EXPERIENCE</h1>
+            <p>ヨルノヨを体験</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- partnership-sec -->
+  <section class="experiencedetail-club">
+    <div class="container exp-detail-page-container">
+      <div class="row">
+        <div class="col-12">
+          <div class="partnershipheading wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s ">
+            <h1>PARTNERSHIP</h1>
+            <p>パートナーシップ事業</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="illumation wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.4s ">
+            <h1>第37回ヨコハマイルミネーション「YOKOHAMA BLUE」</h1>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="illumation-details">
+            <div class="illumation-details-img wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.6s ">
+              <div class="illumation-img"> <img src="images/illumation.png"/></div>
+            </div>
+            <div class="illumation-details-text wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.8s ">
+              <p>
+                2020年で37回目を数える横浜西口のイルミネーション。<br>
+                37回目となる今回はサブタイトルを「YOKOHAMA BLUE」とし、横浜の海をイメージした、明るいライトブルーでライトアップ。新型コロナウイルス対策に尽力する医療従事者への感謝の気持ちとともに、「横浜全体と明るくしたい」という思いを、明るいライトブルーの色に込めました。<br>
+                また出航しようとする船のモチーフで、未来への明るい兆しを表現しました。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="venu-details">
+
+            <div class="v-details-items wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s ">
+                <h6>会場</h6>
+                <p>横浜駅西口周辺<br>
+                  横浜市西区南幸1丁目、2丁目 ほか
+                </p>
+            </div>
+            <div class="v-details-items wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.4s ">
+                <h6>期間</h6>
+                <p>2020/11/18(水)～2021/2/14(日)<br>
+                  17 : 00～23 : 00
+                </p>
+            </div>
+
+            <div class="v-details-items wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.6s ">
+                <h6>入場料・参加費</h6>
+                <p>無料
+                </p>
+            </div>
+
+            <div class="v-details-items wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.8s ">
+                <h6>主催</h6>
+                <p>一般社団法人横浜西口エリアマネジメント</p>
+            </div>
+
+            <div class="v-details-items wow fadeInUp " data-wow-duration="1s " data-wow-delay="1s ">
+                <h6>URL</h6>
+                <p>横浜駅西口周辺<br>
+                  横浜市西区南幸1丁目、2丁目 ほか</p>
+            </div>
+
+            <div class="v-details-items wow fadeInUp " data-wow-duration="1s " data-wow-delay="1.5s ">
+                <h6>問合せ先</h6>
+                <p>一般社団法人横浜西口エリアマネジメント<br>
+                  <a href="https://www.yokohamanishiguchi.or.jp/">https://www.yokohamanishiguchi.or.jp/</a></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+      <!-- footer -->
+  <footer class="footer-section darkbg-footer">
+          <div class="container c-container-xs ">
+              <div class="footer-block ">
+                  <div class="footer-links ">
+                      <a class="footer-logo " href="index.html ">
+                          <img src="images/svg/logo.svg " alt="logo " width="112 ">
+                      </a>
+                      <a target="_blank " href="https://twitter.com/yorunoyo2020 ">
+                          <img src="images/svg/twitter.svg " alt="Twitter ">
+                      </a>
+                      <a target="_blank " href="https://www.instagram.com/yorunoyo2020/?hl=ja ">
+                          <img src="images/svg/insta.svg " alt="Instagram ">
+                      </a>
+                  </div>
+
+                  <div class="footer-text ">
+                      当サイトはCookieとGoogle Analyticsを利用しています。Google Analyticsでの情報収集の仕組みについてはこちらをご参照ください。
+                  </div>
+              </div>
+              <div class="footer-lang ">
+                  <span>日本語</span>
+                  <img src="images/welltool-logo.png " alt="logo ">
+              </div>
+              <div class="copyright ">
+                  ©クリエイティブ・ライト・ヨコハマ実行委員会
+              </div>
+
+              <a class="go-to-top " href="#top">
+                  <img src="images/svg/up.svg " alt="up ">
+              </a>
+          </div>
+      </footer>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
+
+    <!-- Wow JS -->
+    <script type="text/javascript " src="js/wow.min.js"></script>
+    <!-- Lightbox JS -->
+    <script type="text/javascript " src="js/lightgallery.min.js"></script>
+    <script type="text/javascript " src="js/video.js"></script>
+   <!-- Main JS -->
+<script type="text/javascript " src="js/main.js">
+</script>
+</body>
+
+</html>
