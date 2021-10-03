@@ -70,7 +70,7 @@ ul {
 .c-navbar-brand {
     position: absolute;
     left: 42px;
-    top: 2px;
+    top: -11px;
 }
 
 .c-navbar-nav {
@@ -1010,6 +1010,7 @@ ul {
 @media (max-width:1399px) {
     .c-navbar-brand {
         left: 20px;
+        top: 4px;
     }
     .c-btn-toggler {
         right: 20px;
