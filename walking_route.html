@@ -186,15 +186,26 @@
           </div>
         </div>
 
-        <div class="row bs-gutter-35">
-          <div class="col-md-6">
+
+
+
+
+
+
+        <div class="row bs-gutter-35 accordion" id="accordionExample">
+          <div class="col-md-6 order-1 order-sm-0">
             <div class="course-section wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s ">
               <div class="course-heading-section">
                 <h1>○○○○コース
                 </h1>
-                <a href="javascript:;">
-                  <img src="images/svg/minues.svg"/>
-                </a>
+
+
+
+                  <div class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  </button>
+                </div>
+
               </div>
               <div class="course_type">
                 <h1>○○→○○→○○→○○→○○→○○
@@ -247,14 +258,19 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="course-section wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.4s ">
+
+
+
+
+          <div class="col-md-6 order-3 order-sm-0">
+            <div class="course-section  wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.4s ">
               <div class="course-heading-section">
                 <h1>○○○○コース
                 </h1>
-                <a href="javascript:;">
-                  <img src="images/svg/plus.svg"/>
-                </a>
+                  <div class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    </button>
+                  </div>
               </div>
               <div class="course_type green">
                 <h1>○○→○○→○○→○○→○○→○○
@@ -310,10 +326,13 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="videos-section wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.6s ">
+
+
+
+
+          <div class="col-12  order-2 order-sm-0 wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s">
+            <div class=" accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample"  id="collapseOne">
+              <div class="videos-section">
               <div class="videos-section-header">
                 <h1>○○○○コース
                 </h1>
@@ -367,129 +386,345 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="row bs-gutter-35">
-          <div class="col-md-6">
-            <div class="course-section mt-40 wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s ">
-              <div class="course-heading-section">
-                <h1>○○○○コース
+          </div>
+
+
+
+
+
+
+          <div class="col-12  order-4 order-sm-0  wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s">
+            <div class=" accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample"  id="collapseTwo">
+              <div class="videos-section">
+              <div class="videos-section-header">
+                <h1>○○○○コース 2
                 </h1>
-                <a href="javascript:;">
-                  <img src="images/svg/plus.svg"/>
+                <a href="javascript:;" class="cros">
+                  <img src="images/svg/cross.svg"/>
                 </a>
               </div>
-              <div class="course_type purple">
-                <h1>○○→○○→○○→○○→○○→○○
-                </h1>
-                <span>
-                  <img src="images/purple.png"/>
-                </span>
+              <div class="video-des">
+                <p>詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト
+                </p>
               </div>
-              <div class="course-details">
-                <div class="courser-detail-left">
-                  <div class="c-detail">
-                    <div class="req-time">
-                      <h1>所要時間
-                      </h1>
+              <div class="videos-main">
+                <div class="video-container pr-35">
+                  <div class="y-video">
+                    <div class="video-section">
+                      <button class="play-video play-video-img" id="playButton2">
+                        <img src="images/svg/play-button.svg " alt="play ">
+                      </button>
+                      <div id="about-video2" class="position-relative">
+                        <!-- YouTube Video --->
+                        <a data-lg-size="1280-720" data-src="https://www.youtube.com/watch?v=egyIeygdS_E " data-poster="images/video-thumb.png ">
+                          <img width="442 " height="480 " class="img-fluid " src="images/video-thumb.png " />
+                        </a>
+                      </div>
                     </div>
-                    <div class="req-time-detail">
-                      <p>：約○分
-                      </p>
-                    </div>
-                  </div>
-                  <div class="c-detail">
-                    <div class="req-time">
-                      <h1>距離
-                      </h1>
-                    </div>
-                    <div class="req-time-detail">
-                      <p>：約○km
-                      </p>
-                    </div>
-                  </div>
-                  <div class="c-detail">
-                    <div class="req-time">
-                      <h1>スタート地点
-                      </h1>
-                    </div>
-                    <div class="req-time-detail">
-                      <p>：○○
-                      </p>
-                    </div>
-                  </div>
-                  <div class="summary-text">
-                    <p>
-                      概要テキスト概要テキスト概要テキスト概要テキスト概要 キスト概要
+                    <p>360度パノラマ「○○→○○」
                     </p>
                   </div>
+                  <p>○○→○○のパノラマ動画
+                  </p>
                 </div>
-                <div class="courser-detail-right ">
-                  <img src="images/c3.png"/>
+                <div class="video-container pl-35">
+                  <div class="y-video">
+                    <div class="video-section ">
+                      <button class="play-video play-video-img" id="playButton3">
+                        <img src="images/svg/play-button.svg " alt="play ">
+                      </button>
+                      <div id="about-video3" class="position-relative">
+                        <!-- YouTube Video --->
+                        <a data-lg-size="1280-720" data-src="https://www.youtube.com/watch?v=egyIeygdS_E " data-poster="images/video-thumb.png ">
+                          <img width="442 " height="480 " class="img-fluid " src="images/video-thumb.png " />
+                        </a>
+                      </div>
+                    </div>
+                    <p>360度パノラマ「○○→○○」
+                    </p>
+                  </div>
+                  <p>○○→○○のパノラマ動画
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="course-section mt-40 wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.4s ">
-              <div class="course-heading-section">
-                <h1>○○○○コース
-                </h1>
-                <a href="javascript:;">
-                  <img src="images/svg/plus.svg"/>
-                </a>
-              </div>
-              <div class="course_type gray">
-                <h1>○○→○○→○○→○○→○○→○○
-                </h1>
-                <span>
-                  <img src="images/gray-map.png"/>
-                </span>
-              </div>
-              <div class="course-details">
-                <div class="courser-detail-left">
-                  <div class="c-detail">
-                    <div class="req-time">
-                      <h1>所要時間
-                      </h1>
-                    </div>
-                    <div class="req-time-detail">
-                      <p>：約○分
-                      </p>
-                    </div>
-                  </div>
-                  <div class="c-detail">
-                    <div class="req-time">
-                      <h1>距離
-                      </h1>
-                    </div>
-                    <div class="req-time-detail">
-                      <p>：約○km
-                      </p>
-                    </div>
-                  </div>
-                  <div class="c-detail">
-                    <div class="req-time">
-                      <h1>スタート地点
-                      </h1>
-                    </div>
-                    <div class="req-time-detail">
-                      <p>：○○
-                      </p>
-                    </div>
-                  </div>
-                  <div class="summary-text">
-                    <p>
-                      概要テキスト概要テキスト概要テキスト概要テキスト概要 キスト概要
-                    </p>
-                  </div>
-                </div>
-                <div class="courser-detail-right ">
-                  <img src="images/c4.png"/>
-                </div>
-              </div>
             </div>
           </div>
+
+  </div>
+
+
+
+
+
+
+  <div class="row bs-gutter-35 accordion" id="accordionExample1">
+    <div class="col-md-6 walking-padding-top order-1 order-sm-0">
+      <div class="course-section  wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s ">
+        <div class="course-heading-section">
+          <h1>○○○○コース
+          </h1>
+
+
+
+            <div class="accordion-header" id="headingthree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+            </button>
+          </div>
+
         </div>
+        <div class="course_type purple">
+          <h1>○○→○○→○○→○○→○○→○○
+          </h1>
+          <span>
+            <img src="images/purple.png"/>
+          </span>
+        </div>
+        <div class="course-details">
+          <div class="courser-detail-left">
+            <div class="c-detail">
+              <div class="req-time">
+                <h1>所要時間
+                </h1>
+              </div>
+              <div class="req-time-detail">
+                <p>：約○分
+                </p>
+              </div>
+            </div>
+            <div class="c-detail">
+              <div class="req-time">
+                <h1>距離
+                </h1>
+              </div>
+              <div class="req-time-detail">
+                <p>：約○km
+                </p>
+              </div>
+            </div>
+            <div class="c-detail">
+              <div class="req-time">
+                <h1>スタート地点
+                </h1>
+              </div>
+              <div class="req-time-detail">
+                <p>：○○
+                </p>
+              </div>
+            </div>
+            <div class="summary-text">
+              <p>
+                概要テキスト概要テキスト概要テキスト概要テキスト概要テキスト概要テキスト
+              </p>
+            </div>
+          </div>
+          <div class="courser-detail-right">
+            <img src="images/c3.png"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="col-md-6 walking-padding-top order-3 order-sm-0">
+      <div class="course-section   wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.4s ">
+        <div class="course-heading-section">
+          <h1>○○○○コース
+          </h1>
+            <div class="accordion-header" id="headingfour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              </button>
+            </div>
+        </div>
+        <div class="course_type gray">
+          <h1>○○→○○→○○→○○→○○→○○
+          </h1>
+          <span>
+            <img src="images/gray-map.png"/>
+          </span>
+        </div>
+        <div class="course-details">
+          <div class="courser-detail-left">
+
+            <div class="c-detail">
+              <div class="req-time">
+                <h1>所要時間
+                </h1>
+              </div>
+              <div class="req-time-detail">
+                <p>：約○分
+                </p>
+              </div>
+            </div>
+            <div class="c-detail">
+              <div class="req-time">
+                <h1>距離
+                </h1>
+              </div>
+              <div class="req-time-detail">
+                <p>：約○km
+                </p>
+              </div>
+            </div>
+            <div class="c-detail">
+              <div class="req-time">
+                <h1>スタート地点
+                </h1>
+              </div>
+              <div class="req-time-detail">
+                <p>：○○
+                </p>
+              </div>
+            </div>
+            <div class="summary-text">
+              <p>
+                概要テキスト概要テキスト概要テキスト概要テキス
+              </p>
+            </div>
+          </div>
+          <div class="courser-detail-right ">
+            <img src="images/c4.png"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="col-12  order-2 order-sm-0 wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s">
+      <div class=" accordion-collapse collapse " aria-labelledby="headingthree" data-bs-parent="#accordionExample1"  id="collapseThree">
+          <div class="videos-section">
+        <div class="videos-section-header">
+          <h1>○○○○コース
+          </h1>
+          <a href="javascript:;" class="cros">
+            <img src="images/svg/cross.svg"/>
+          </a>
+        </div>
+        <div class="video-des">
+          <p>詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト
+          </p>
+        </div>
+        <div class="videos-main">
+          <div class="video-container pr-35">
+            <div class="y-video">
+              <div class="video-section">
+                <button class="play-video play-video-img" id="playButton2">
+                  <img src="images/svg/play-button.svg " alt="play ">
+                </button>
+                <div id="about-video2" class="position-relative">
+                  <!-- YouTube Video --->
+                  <a data-lg-size="1280-720" data-src="https://www.youtube.com/watch?v=egyIeygdS_E " data-poster="images/video-thumb.png ">
+                    <img width="442 " height="480 " class="img-fluid " src="images/video-thumb.png " />
+                  </a>
+                </div>
+              </div>
+              <p>360度パノラマ「○○→○○」
+              </p>
+            </div>
+            <p>○○→○○のパノラマ動画
+            </p>
+          </div>
+          <div class="video-container pl-35">
+            <div class="y-video">
+              <div class="video-section ">
+                <button class="play-video play-video-img" id="playButton3">
+                  <img src="images/svg/play-button.svg " alt="play ">
+                </button>
+                <div id="about-video3" class="position-relative">
+                  <!-- YouTube Video --->
+                  <a data-lg-size="1280-720" data-src="https://www.youtube.com/watch?v=egyIeygdS_E " data-poster="images/video-thumb.png ">
+                    <img width="442 " height="480 " class="img-fluid " src="images/video-thumb.png " />
+                  </a>
+                </div>
+              </div>
+              <p>360度パノラマ「○○→○○」
+              </p>
+            </div>
+            <p>○○→○○のパノラマ動画
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+
+
+
+
+
+
+    <div class="col-12 order-4 order-sm-0  wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s">
+      <div class=" aaccordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample1"  id="collapseFour">
+<div class="videos-section">
+
+        <div class="videos-section-header">
+          <h1>○○○○コース 2
+          </h1>
+          <a href="javascript:;" class="cros">
+            <img src="images/svg/cross.svg"/>
+          </a>
+        </div>
+        <div class="video-des">
+          <p>詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト
+          </p>
+        </div>
+        <div class="videos-main">
+          <div class="video-container pr-35">
+            <div class="y-video">
+              <div class="video-section">
+                <button class="play-video play-video-img" id="playButton2">
+                  <img src="images/svg/play-button.svg " alt="play ">
+                </button>
+                <div id="about-video2" class="position-relative">
+                  <!-- YouTube Video --->
+                  <a data-lg-size="1280-720" data-src="https://www.youtube.com/watch?v=egyIeygdS_E " data-poster="images/video-thumb.png ">
+                    <img width="442 " height="480 " class="img-fluid " src="images/video-thumb.png " />
+                  </a>
+                </div>
+              </div>
+              <p>360度パノラマ「○○→○○」
+              </p>
+            </div>
+            <p>○○→○○のパノラマ動画
+            </p>
+          </div>
+          <div class="video-container pl-35">
+            <div class="y-video">
+              <div class="video-section ">
+                <button class="play-video play-video-img" id="playButton3">
+                  <img src="images/svg/play-button.svg " alt="play ">
+                </button>
+                <div id="about-video3" class="position-relative">
+                  <!-- YouTube Video --->
+                  <a data-lg-size="1280-720" data-src="https://www.youtube.com/watch?v=egyIeygdS_E " data-poster="images/video-thumb.png ">
+                    <img width="442 " height="480 " class="img-fluid " src="images/video-thumb.png " />
+                  </a>
+                </div>
+              </div>
+              <p>360度パノラマ「○○→○○」
+              </p>
+            </div>
+            <p>○○→○○のパノラマ動画
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
         <div class="row">
           <div class="col-md-12">
             <div class="what_is_sec wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.4s ">
@@ -583,6 +818,6 @@
          $("#about-video3> a > img").trigger("click");
      });
   </script>
-   
+
   </body>
 </html>

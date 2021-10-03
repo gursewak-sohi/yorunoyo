@@ -1,4 +1,4 @@
- // Swiper 
+ // Swiper Hero
  var swiper = new Swiper("#hero-swiper", {
      effect: "coverflow",
      grabCursor: true,
@@ -18,6 +18,17 @@
      },
 
  });
+
+// Swiper Top Text
+ var swiper2 = new Swiper(".hero-text-animations", {
+    direction: "vertical",
+    slidesPerView: 3,
+    loop: true,
+    simulateTouch:false,
+    autoplay: {
+        delay: 2000,
+      },
+  });
 
 
  // Lightbox Video
@@ -44,9 +55,13 @@
          if ($("#slide-one").hasClass("swiper-slide-active")) {
              $("#slide-one-view").toggle();
              $("#slide-two-view").toggle();
+             $(".first-slide-content").removeClass("active");
+             $(".second-slide-content").addClass("active");
          } else {
              $("#slide-one-view").toggle();
              $("#slide-two-view").toggle();
+             $(".first-slide-content").addClass("active");
+             $(".second-slide-content").removeClass("active");
          }
      });
 
