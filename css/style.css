@@ -69,8 +69,8 @@ ul {
 
 .c-navbar-brand {
     position: absolute;
-    left: 42px;
-    top: -11px;
+    left: 40px;
+    
 }
 
 .c-navbar-nav {
@@ -78,42 +78,27 @@ ul {
     margin-right: auto;
 }
 
-.navbar-floating  {
-	position: absolute;
-	top: 50px;
+.navbar-floating {
+	position: fixed;
+	top: 0;
 	z-index: 888;
 	left: 0px;
-    right: 0px;
+	right: 0px;
+    min-height: 90px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+    transition: 0.2s all ease;
+}
+.navbar-floating.active {
+    padding-top: 24px;
+	padding-bottom: 24px;
+    background-color: rgba(0, 0, 0, 1);
 }
 
-.first-slide-content , .second-slide-content {
-    opacity: 0;
-    visibility: hidden;
-    max-height: 0;
-    width: 0;
-    padding-top:0;
-    padding-bottom: 0;
-    transform: translateY(10px);
-    transition: 0.3s opacity ease , 0.3s transform ease;
+.inner_page_body .navbar-floating.active {
+ 
+    background-color: rgba(0, 0, 0, 1);
 }
-
-
-
-
-.first-slide-content.active , .second-slide-content.active{
-    opacity: 1;
-    visibility: visible;
-    max-height: inherit;
-    width: auto;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    transform: translateY(0px);
-}
-.first-slide-content.c-btn-toggler , .second-slide-content.c-btn-toggler {
-    max-height: inherit;
-    width: 164px;
-}
-
 .c-red-block-wrapper {
     position: absolute;
     left: 50%;
@@ -146,7 +131,7 @@ ul {
     justify-content: center;
     position: absolute;
     right: 30px;
-    top: 13px;
+    
     animation: shake .5s linear infinite;
 }
 
@@ -194,7 +179,7 @@ ul {
     margin-left: auto;
     margin-right: auto;  
     margin-top: 60px;  
-    height: 190px;
+    height: 80px;
 }
 .hero-top-text {
     margin-top: 20px;
@@ -262,8 +247,8 @@ ul {
 
 .navbar-toggler {
     position: absolute;
-    top: 28px;
-    right: 0;
+   
+    right: 10px;
 }
 
 .navbar-toggler:focus {
@@ -916,7 +901,7 @@ ul {
 }
 
 .social-section {
-    margin-bottom: 69px;
+    margin-bottom: 116px;
 }
 
 .go-to-top {
@@ -984,6 +969,87 @@ ul {
     padding-top: 70px;
 }
 
+
+.first-slide-content , .second-slide-content {
+    display: none;
+ }
+ 
+  
+ .first-slide-content.active , .second-slide-content.active{
+     display: flex;
+     -webkit-animation: header-show 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+     animation: header-show 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+ }
+
+ .first-slide-content.c-btn-toggler , .second-slide-content.c-btn-toggler{
+    animation: shake .5s linear infinite
+ }
+   
+ 
+ @-webkit-keyframes header-show {
+     from {
+         transform: translateY(10px);
+         opacity: 0;
+       }
+       to {
+           transform: translateY(0px);
+         opacity: 1;
+       }
+   }
+   
+   @keyframes header-show {
+     from {
+       transform: translateY(10px);
+       opacity: 0;
+     }
+     to {
+         transform: translateY(0px);
+       opacity: 1;
+     }
+   }
+
+   .inner_page_body {
+    padding-top: 102px;
+}
+
+.inner_page_body  {
+    padding-top: 102px;
+}
+
+.inner_page_body.dark_bg {
+	background-color: #111;
+}
+.scroller-page {
+    background-color: #FED900;
+    position: sticky;
+    bottom: 0;
+    
+}
+.scroller-block {
+    height: 102px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.scroller-logo {
+    display: flex;
+    align-items: center;
+}
+.scroller-logo > img {
+    margin-right: 8px;
+}
+.scroller-logo > h5 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px; 
+}
+.scroller-block p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px; 
+}
 @media (max-width:1620px) {
     .c-navbar-nav {
         margin-left: 200px;
@@ -1010,7 +1076,7 @@ ul {
 @media (max-width:1399px) {
     .c-navbar-brand {
         left: 20px;
-        top: 4px;
+     
     }
     .c-btn-toggler {
         right: 20px;
@@ -1042,11 +1108,11 @@ ul {
 @media (max-width:1199px) {
     .navbar-collapse {
         position: absolute;
-        top: -32px;
-        left: -12px;
-        right: -12px;
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 46px 20px 30px 20px;
+        top: -24px;
+        left: 0px;
+        right: 0px;
+        background-color: rgba(0, 0, 0, 1);
+        padding: 46px 20px 20px 20px;
         box-shadow: 0px 12px 22px rgba(0, 0, 0, 0.3);
         z-index: 1;
     }
@@ -1058,7 +1124,9 @@ ul {
     }
     .c-navbar-nav {
         margin-left: 0;
-        padding-top: 60px;
+        padding-top: 70px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .c-red-block-wrapper {
         position: static;
@@ -1133,6 +1201,9 @@ ul {
         margin-left: 0;
         margin-right: 0;
     }
+    .inner_page_body {
+        padding-top: 90px;
+    }
 }
 
 @media (max-width:767px) {
@@ -1194,11 +1265,23 @@ ul {
         margin-right: auto;
         margin-top: 30px;
     }
+    .scroller-block {
+        height: auto;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .scroller-logo {
+       margin-bottom: 20px;
+    }
+    .scroller-block p {
+        margin-bottom: 20px;
+        text-align: center;
+    }
 }
 
 @media (max-width:575px) {
     .hero-main-image {
-        margin-top: 8vw;
+        margin-top: 2vw;
         width: 100%;
     }
     .hero-main-image>img {
@@ -1225,14 +1308,7 @@ ul {
     .hero {
         padding-top: 22px;
     }
-    .c-navbar-brand {
-        left: 10px;
-        top: -5px;
-    }
-    .navbar-toggler {
-        right: -3px;
-        top: 19px;
-    }
+   
     .hero-text-bg {
         padding: 7px 7px;
         margin-bottom: -270px;
@@ -1359,10 +1435,44 @@ ul {
     .compaign-section {
         padding-top: 50px;
     }
+    .c-red-block-wrapper {
+        transform: scale(0.9);
+        transform-origin: left;
+    }
+    .c-red-block-wrapper {
+     
+        margin-top: 13px;
+      
+    }
+    .c-btn-toggler {
+       
+        margin-top: 10px;
+       
+    }
+    @keyframes shake {
+        0% {
+            transform: translateX(0) scale(0.9);
+            transform-origin: left;
+        }
+        40% {
+            transform: translateX(-3%) scale(0.9);
+            transform-origin: left;
+        }
+        80% {
+            transform: translateX(3%) scale(0.9);
+            transform-origin: left;
+        }
+        100% {
+            transform: translateX(0) scale(0.9);
+            transform-origin: left;
+        }
+    }
 }
 
 
 /******** Walking route page *************/
+
+
 .inner-pages-header {
     background-color: #F2F2F2;
     height: 268px;
@@ -2028,14 +2138,9 @@ padding-bottom: 100px;
 }
 .inner-pages {
     background-color: #000;
-    height: 164px;
+ 
 }
-.inner-pages .c-navbar-brand {
-    top: 38px;
-}
-.inner-pages .c-btn-toggler-orange {
-    top: 56px;
-}
+ 
 .wmap .map-frame {
     height: 512px;
     margin-bottom: 55px;
@@ -2511,11 +2616,7 @@ padding-right: 20px;
 .inner-pages .c-btn-toggler-orange {
     top: 0;
 }
-.inner-pages .c-navbar-brand {
-  top: 8px;
-left: 20px;
-
-}
+ 
 .inner-pages-header {
     height: 225px;
 }
@@ -2584,22 +2685,9 @@ left: 20px;
 
     top: 4px;
 }
-.inner-pages .navbar-toggler {
-    top: 30px;
-}
-.navbar-floating {
-	top: 18px;
-	left: 10px;
-	right: 10px;
-}
  
-
-.first-slide-content.c-btn-toggler , .second-slide-content.c-btn-toggler {
-    display: none;
-}
-.first-slide-content.c-btn-toggler.active , .second-slide-content.c-btn-toggler.active {
-    display: flex;
-}
+ 
+ 
 
 }
 
@@ -2738,10 +2826,7 @@ left: 20px;
     padding-top: 80px;
     padding-bottom: 60px;
 }
-.inner-pages .navbar-toggler {
-    top: 30px;
-    right: 10px;
-}
+ 
 .event-img {
     width: 100%;
     height: auto;
@@ -3025,9 +3110,7 @@ width: 264px;
 }
 
 @media (max-width:575px) {
-  .inner-pages .navbar-toggler {
-    top: 29px;
-}
+ 
 .inner-page-heading h1 {
     font-size: 30px;
 }
@@ -3243,4 +3326,5 @@ width: 264px;
 .walking-padding-top {
     padding-top: 0;
 }
+ 
 }

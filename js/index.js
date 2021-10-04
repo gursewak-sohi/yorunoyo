@@ -16,13 +16,18 @@
          nextEl: '#nextSlide',
          prevEl: '#prevSlide',
      },
+     hashNavigation: {
+        watchState: true,
+      },
 
  });
+
+
 
 // Swiper Top Text
  var swiper2 = new Swiper(".hero-text-animations", {
     direction: "vertical",
-    slidesPerView: 3,
+    slidesPerView: 1,
     loop: true,
     simulateTouch:false,
     autoplay: {

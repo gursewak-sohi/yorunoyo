@@ -11,3 +11,15 @@ $(window).scroll(function() {
   }
 }
 );
+
+// On scroll Header  
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+  if (scroll >= 10) {
+    $(".navbar-floating").addClass("active");
+  }
+  else {
+    $(".navbar-floating").removeClass("active");
+  }
+}
+);
