@@ -116,4 +116,12 @@ $(document).ready(function() {
     }
 
 
+    // parallax 
+    if ($(".jarallax").length > 0) {
+        jarallax(document.querySelectorAll('.jarallax'), {
+            speed: 0.2
+        });
+    }
+
+
 });
