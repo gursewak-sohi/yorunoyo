@@ -178,16 +178,15 @@ ul {
     max-width: 720px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 60px;
-    height: 80px;
+    margin-top: 80px;
+    height: 43px;
+    border: 2px solid #fff;
+    padding: 6px 16px;
+    
 }
 .hero-top-text {
-    margin-top: 20px;
-    border: 2px solid #fff;
     color: #fff;
     font-size: 16px;
-    padding: 6px 16px;
-
 }
 
 .hero-top-text span {
@@ -1149,7 +1148,7 @@ ul {
         z-index: 2;
     }
     .hero-text-animations {
-        margin-top: 70px;
+        margin-top: 90px;
     }
     .hero-text {
         margin-bottom: -300px;

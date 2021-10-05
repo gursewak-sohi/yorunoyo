@@ -18,9 +18,6 @@
     <link href="css/style.css" rel="stylesheet" />
     <title>Yorunoyo</title>
     <style>
-
-
-
         .page-loading {
             position: fixed;
             top: 0;
@@ -37,12 +34,12 @@
             z-index: 9999;
             transform: translateY(-100%);
         }
-
+        
         .page-loading.active {
             visibility: visible;
             transform: translateY(0);
         }
-
+        
         .page-loading-inner {
             position: absolute;
             top: 50%;
@@ -55,11 +52,11 @@
             transition: opacity .2s ease-in-out;
             opacity: 0;
         }
-
+        
         .page-loading.active>.page-loading-inner {
             opacity: 1;
         }
-
+        
         .page-loading-inner>span {
             display: block;
             font-family: 'Inter', sans-serif;
@@ -67,7 +64,7 @@
             font-weight: normal;
             color: #fff;
         }
-
+        
         .page-spinner {
             display: inline-block;
             width: 2.75rem;
@@ -80,29 +77,20 @@
             -webkit-animation: spinner .75s linear infinite;
             animation: spinner .75s linear infinite;
         }
-
+        
         @-webkit-keyframes spinner {
             100% {
                 -webkit-transform: rotate(360deg);
                 transform: rotate(360deg);
             }
         }
-
+        
         @keyframes spinner {
             100% {
                 -webkit-transform: rotate(360deg);
                 transform: rotate(360deg);
             }
         }
-
-        
-     
-
-
-
-
- 
-
     </style>
     <!-- Page loading scripts-->
     <script>
@@ -141,25 +129,25 @@
             <div class="collapse navbar-collapse " id="hero-banner-1">
                 <ul class="navbar-nav c-navbar-nav mb-2 mb-lg-0 ">
                     <li class="nav-item ">
-                        <a class="nav-link c-nav-link first-slide-content active" href="#aboutyorunoyo ">ABOUT yorunoyo</a>
-                        <a class="nav-link c-nav-link second-slide-content" href="#campaign ">キャンペーン</a>
+                        <a class="nav-link c-nav-link first-slide-content active" href="#aboutyorunoyo">ABOUT yorunoyo</a>
+                        <a class="nav-link c-nav-link second-slide-content" href="#campaign">キャンペーン</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link c-nav-link first-slide-content active" href="#experiece ">EXPERIENCE</a>
-                        <a class="nav-link c-nav-link second-slide-content" href="#collaboration ">collaboration</a>
+                        <a class="nav-link c-nav-link first-slide-content active" href="#experiece">EXPERIENCE</a>
+                        <a class="nav-link c-nav-link second-slide-content" href="#collaboration">collaboration</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link c-nav-link first-slide-content active" href="#yorunoyomap ">yorunoyoMAP</a>
-                        <a class="nav-link c-nav-link second-slide-content" href="#partnership ">PARTNERSHIP</a>
+                        <a class="nav-link c-nav-link first-slide-content active" href="#yorunoyomap">yorunoyoMAP</a>
+                        <a class="nav-link c-nav-link second-slide-content" href="#partnership">PARTNERSHIP</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link c-nav-link first-slide-content active" href="#outline ">OUTLINE</a>
-                        <a class="nav-link c-nav-link second-slide-content" href="#nightview ">ナイトビュールート</a>
+                        <a class="nav-link c-nav-link first-slide-content active" href="#outline">OUTLINE</a>
+                        <a class="nav-link c-nav-link second-slide-content" href="#nightview">ナイトビュールート</a>
                     </li>
 
                 </ul>
                 <div class="c-red-block-wrapper ">
-                
+
                     <div class="c-red-block ">
                         新型コロナウイルス感染症 への対応について
                     </div>
@@ -172,8 +160,8 @@
         </div>
     </nav>
 
-   
-          
+
+
     <!-- Hero Section -->
     <section class="hero-section">
         <div id="hero-swiper" class="swiper">
@@ -181,7 +169,7 @@
                 <div id="slide-one" data-hash="yorunoyo" class="swiper-slide">
                     <div class="hero hero-2">
                         <div class="container-fluid">
-                            
+
                             <div class="hero-main-image hero-main-image-2 ">
                                 <img src="images/hero2.png " alt="banner " />
                             </div>
@@ -198,8 +186,8 @@
                             <!-- Swiper -->
                             <div class="swiper hero-text-animations">
                                 <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="hero-top-text ">
+                                    <div class="swiper-slide">
+                                        <div class="hero-top-text ">
                                             <span>ティッカータイプのお知らせテキスト</span>
                                         </div>
                                     </div>
@@ -216,8 +204,8 @@
                                 </div>
                             </div>
 
-                         
-                            
+
+
                             <div class="hero-main-image ">
                                 <img src="images/hero1.png " alt="banner " />
                             </div>
@@ -291,7 +279,7 @@
         </section>
 
         <!-- About Section -->
-        <section class="about-section " id="aboutyorunoyo ">
+        <section class="about-section " id="aboutyorunoyo">
             <div class="container c-container-xs ">
                 <div class="about-block ">
                     <div class="about-block-text ">
@@ -320,9 +308,9 @@
                         </div>
 
                     </div>
-                    <div class="about-block-video wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s ">
-                        <button class="play-video" id="playButton"><img src="images/svg/play-button.svg " alt="play "></button>
-                        <div id="about-video">
+                    <div class="about-block-video video-main-block wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s ">
+                        <button class="play-video"><img src="images/svg/play-button.svg " alt="play"></button>
+                        <div class="video-gallery">
                             <!-- YouTube Video --->
                             <a data-lg-size="1280-720" data-src="//www.youtube.com/watch?v=egyIeygdS_E " data-poster="images/about-video.png ">
                                 <img width="720 " height="408 " class="img-fluid " src="images/about-video.png " />
@@ -334,7 +322,7 @@
         </section>
 
         <!-- Experience Section -->
-        <section class="experience-section " id="experiece ">
+        <section class="experience-section " id="experiece">
             <div class="container c-container-xs ">
                 <div class="heading heading-light wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s ">
                     <h3>EXPERIENCE</h3>
@@ -382,7 +370,7 @@
         </section>
 
         <!-- Map Section -->
-        <section class="map-section " id="yorunoyomap ">
+        <section class="map-section " id="yorunoyomap">
             <div class="container c-container-xs ">
                 <div class="heading heading-dark wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s ">
                     <h3>yorunoyo MAP</h3>
@@ -393,8 +381,8 @@
                         <iframe src="https://platinumaps.jp/d/yorunoyo " frameborder="0 " height="100% " width="100% "></iframe>
                     </div>
                     <div class="map-links">
-                        <a href="javascript:;"><img class="mb-0" src="images/svg/right.svg" alt="arrow"/> <span>大きなマップでみる</span> </a>
-                        <a href="javascript:;"><img class="mb-0" src="images/svg/right.svg" alt="arrow"/> <span>マップの詳細な使い方はこちらをご覧ください。</span></a>
+                        <a href="javascript:;"><img class="mb-0" src="images/svg/right.svg" alt="arrow" /> <span>大きなマップでみる</span> </a>
+                        <a href="javascript:;"><img class="mb-0" src="images/svg/right.svg" alt="arrow" /> <span>マップの詳細な使い方はこちらをご覧ください。</span></a>
                     </div>
                 </div>
 
@@ -403,7 +391,7 @@
 
 
         <!-- Outline Section -->
-        <section class="outline-section " id="outline ">
+        <section class="outline-section " id="outline">
             <div class="container c-container-xs ">
                 <div class="heading heading-dark heading-mb-xs wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.2s ">
                     <h3>OUTLINE</h3>
@@ -544,25 +532,25 @@
         </section>
 
         <!-- Yellow Section -->
-        <section class="scroller-page">
+        <section class="scroller-page wow zoomIn" data-wow-duration="1.2s " data-wow-delay="0.2s ">
             <div class="container c-container-xs">
                 <div class="scroller-block">
                     <div class="scroller-logo">
-                        <img src="images/hamaburari_logo.png" alt="logo"/>
+                        <img src="images/hamaburari_logo.png" alt="logo" />
                         <h5>HAMAVRALLY</h5>
                     </div>
-                    <p>横浜の街を歩いて巡ろう！<br>
-                        お得なキャンペーン情報やコラボレーション企画はこちらから</p>
-                        <div>
-                            <img src="images/svg/right_arrow.svg" alt="icon"/>
-                        </div>
+                    <p>横浜の街を歩いて巡ろう！<br> お得なキャンペーン情報やコラボレーション企画はこちらから
+                    </p>
+                    <div>
+                        <img src="images/svg/right_arrow.svg" alt="icon" />
+                    </div>
                 </div>
             </div>
         </section>
 
     </div>
 
-    <div id="slide-two-view" style="display: none; ">
+    <div id="slide-two-view" style="display: none;">
         <!-- Compaign Section -->
         <section class="experience-section compaign-section " id="campaign">
             <div class="container c-container-xs ">
@@ -611,7 +599,7 @@
         </section>
 
         <!-- Collaboration Section -->
-        <section class="experience-section collaboration-section " id="collaboration ">
+        <section class="experience-section collaboration-section " id="collaboration">
             <div class="container c-container-xs ">
                 <div class="heading heading-dark wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
                     <h3>Collaboration</h3>
@@ -680,7 +668,7 @@
         </section>
 
         <!-- Partnership Section -->
-        <section class="partnership-section " id="partnership ">
+        <section class="partnership-section " id="partnership">
             <div class="container c-container-xs ">
                 <div class="heading heading-dark heading-mb-xl wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
                     <h3>Partnership</h3>
@@ -704,7 +692,7 @@
 
 
         <!-- Night View Section -->
-        <section class="experience-section night-view-section " id="nightview ">
+        <section class="experience-section night-view-section " id="nightview">
             <div class="container c-container-xs ">
                 <div class="heading heading-dark wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
                     <h3>Night view route</h3>
@@ -808,12 +796,11 @@
     <!-- Lightbox JS -->
     <script type="text/javascript " src="js/lightgallery.min.js"></script>
     <script type="text/javascript " src="js/video.js"></script>
-     <!-- Main JS -->
-  <script type="text/javascript " src="js/main.js">
-  </script>
-    <!-- Home Page JS -->
-    <script type="text/javascript " src="js/index.js"></script>
- 
+    <!-- Main JS -->
+    <script type="text/javascript " src="js/main.js">
+    </script>
+
+
 </body>
 
 </html>
