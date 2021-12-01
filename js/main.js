@@ -24,7 +24,7 @@ $(document).ready(function() {
             grabCursor: true,
             centeredSlides: true,
             slidesPerView: "auto",
-            speed: 800,
+            speed: 500,
             coverflowEffect: {
                 rotate: 50,
                 stretch: 0,

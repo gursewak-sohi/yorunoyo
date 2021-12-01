@@ -44,6 +44,7 @@ ul {
     padding-top: 52px;
     height: 0;
     padding-bottom: 70%;
+    transition: 0s linear;
 }
 
 .hero-1 {
